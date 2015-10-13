@@ -1,4 +1,6 @@
 # private-state
+[![Build Status](https://travis-ci.org/wealthfront/private-state.svg?branch=master)](https://travis-ci.org/wealthfront/private-state)
+[![devDependency Status](https://david-dm.org/wealthfront/private-state/dev-status.svg)](https://david-dm.org/wealthfront/private-state#info=devDependencies)
 
 This module enables files written with the CommonJS module syntax to expose private functions for testing.
 

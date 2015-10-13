@@ -7,7 +7,10 @@
   ],
   "main": "src/index.js",
   "scripts": {
-    "test": "eslint . && jscs src test && NODE_ENV=test mocha && NODE_ENV=test karma start"
+    "test": "npm run linters && npm run mocha && NODE_ENV=test karma start",
+    "test-ci": "npm run linters && npm run mocha && NODE_ENV=test karma start --browsers Firefox",
+    "mocha": "NODE_ENV=test mocha",
+    "linters": "eslint . && jscs ."
   },
   "dependencies": {
     "execution-environment": "1.0.2"
@@ -20,9 +23,10 @@
     "jscs": "2.1.1",
     "jshint": "2.8.0",
     "karma": "0.13.9",
-    "karma-browserify": "4.3.0",
+    "karma-browserify": "4.4.0",
     "karma-chrome-launcher": "0.2.0",
     "karma-cli": "0.1.0",
+    "karma-firefox-launcher": "0.1.6",
     "karma-mocha": "0.2.0",
     "mocha": "2.3.2",
     "object.assign": "4.0.1",
