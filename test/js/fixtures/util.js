@@ -16,7 +16,7 @@ var Utils = {
 
   multiply: function(a, b) {
     return a * b;
-  },
+  }
 };
 
 privateState.exposeForTesting(Utils, ['add']);
