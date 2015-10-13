@@ -1,7 +1,6 @@
 'use strict';
 
 var privateState = require('../../../');
-var keys = require('./keys');
 
 var BASE = 20;
 var privateVariable = 1000; // eslint-disable-line
@@ -18,10 +17,6 @@ var Utils = {
   multiply: function(a, b) {
     return a * b;
   },
-
-  convertKeyCode: function(keyCode) {
-    return keys[keyCode];
-  }
 };
 
 privateState.exposeForTesting(Utils, ['add']);
