@@ -1,6 +1,6 @@
-# private-state
-[![Build Status](https://travis-ci.org/wealthfront/private-state.svg?branch=master)](https://travis-ci.org/wealthfront/private-state)
-[![devDependency Status](https://david-dm.org/wealthfront/private-state/dev-status.svg)](https://david-dm.org/wealthfront/private-state#info=devDependencies)
+# privatestate
+[![Build Status](https://travis-ci.org/wealthfront/privatestate.svg?branch=master)](https://travis-ci.org/wealthfront/privatestate)
+[![devDependency Status](https://david-dm.org/wealthfront/privatestate/dev-status.svg)](https://david-dm.org/wealthfront/privatestate#info=devDependencies)
 
 This module enables files written with the CommonJS module syntax to expose private functions for testing.
 
@@ -25,11 +25,11 @@ var Utils = {
 module.exports = Utils;
 ```
 
-When we write our tests, we can't access `helper` when we require our file. `private-state` lets us access it.
+When we write our tests, we can't access `helper` when we require our file. `privatestate` lets us access it.
 
 Expose your function like this:
 ```
-var privateState = require('private-state');
+var privateState = require('privatestate');
 
 function helper() {
   return 'helper';
@@ -50,7 +50,7 @@ In our test, we can now access our function:
 
 ```
 var utils = require('./utils');
-var privateState = require('private-state');
+var privateState = require('privatestate');
 var sinon = require('sinon');
 
 describe('Utils', function() {

@@ -1,5 +1,5 @@
 {
-  "name": "private-state",
+  "name": "privatestate",
   "description": "Expose your private state in your tests.",
   "version": "1.0.1",
   "files": [
@@ -41,7 +41,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wealthfront/private-state.git"
+    "url": "git+https://github.com/wealthfront/privatestate.git"
   },
   "keywords": [
     "test",
@@ -51,7 +51,7 @@
   "author": "Wealthfront Engineering <eng@wealthfront.com> (https://wealthfront.com)",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/wealthfront/private-state/issues"
+    "url": "https://github.com/wealthfront/privatestate/issues"
   },
-  "homepage": "https://github.com/wealthfront/private-state#readme"
+  "homepage": "https://github.com/wealthfront/privatestate#readme"
 }
