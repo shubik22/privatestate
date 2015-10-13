@@ -1,0 +1,18 @@
+language: node_js
+script: npm test
+node_js:
+- node
+- '4'
+- '0.12'
+notifications:
+  email:
+  - eng+build+privatestate@wealthfront.com
+deploy:
+  provider: npm
+  email: ops+npm@wealthfront.com
+  api_key:
+    secure: ueHtx2wWuayO4NilKqcX9SUt57xvGhf5fcI3jjeUXM0cLTbKsXPWXgLHqTn/itqDuhZcIJk+vlhhimJreATv8jWukowZMbZs3gQWQPzvg3ZgYpLb9AXdo/H3EPiSlrUWK10qnt2Nz8SKXPltSnutUmF6J+sKqepTWuTYUxbfB1JxanHZskH21GjA0Tg1CYUad0q0LLIPYg9oF1zx0Z3tnuJwnsIh9x7ukG5Twq0+qIvNfAR9ucYwr68sBjfNk4f5H970BeXmV/CcTlBZLA+e2W/D3N5vUsT4vy+OQI10aK9AjxYMIPZQcRm7VuKhL4c1upkjm1CyRiGZwfoA2bSR7NbJXCY22m/y/m5aPwbrRB/Lmr7A2BQOOGKgoVxqwuhoyTQC3uA5B6NfrJWgyoLb2DUkItqxu3a9lpcXVlgbrjMzcTsFRYfd9vBbQi7SqYyFZ/rJlcJE78bmsuIgF6fjuW1e8pCXE6V4t4XcVTEJ5kUHAtLcT5RqzeLV8tJHaqlvQe291yB+sY0b2AcMzUqCCJ29DzuvEdoRpvBCoi4EwxO+tUmXKagq4Owl0OrKCh9LflGZ4sOHBD3C3ierpsdp2nckEV+ufywNhXoaROnp6KFXEcEPHBonnMhej/iag/6sfLyTYQbDsPXejUK2LoqRvrhopMsVvv/gBhh4THLeRMA=
+  on:
+    tags: true
+    repo: wealthfront/private-state
+    node: node
